@@ -2,8 +2,7 @@ discord.py
 requests
 asyncio
 youtube_dl
-urllib
-Request
+urllib3
 bs4
 datetime
 time
