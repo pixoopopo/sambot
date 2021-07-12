@@ -337,7 +337,7 @@ async def 전자계집(ctx):
     embed.set_author(name="전자계집",icon_url='http://www.businesspost.co.kr/news/photo/201804/20180417205023_15744.jpg')
     embed.set_thumbnail(url='https://img.hankyung.com/photo/202106/01.26562695.1.jpg')
     embed.set_image(url=sampics)
-    embed.set_footer(text="Ver. 0.0a   Devloped by Pix")
+    embed.set_footer(text="Ver. 5.23a   Devloped by Pix")
     await ctx.send(embed=embed)
 
 #music player
