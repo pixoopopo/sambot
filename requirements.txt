@@ -6,5 +6,4 @@ urllib3
 bs4
 datetime
 validators
-googleapiclient
-discovery
+google-api-python-client
