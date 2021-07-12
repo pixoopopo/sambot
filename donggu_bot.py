@@ -23,7 +23,7 @@ import validators
 import ssl
 from urllib.parse import quote
 
-import pixiv_crawler as pc
+#import pixiv_crawler as pc
 
 ssl._create_default_https_context = ssl._create_unverified_context
 #from selenium import webdriver
