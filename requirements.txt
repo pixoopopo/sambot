@@ -10,4 +10,3 @@ time
 pickle
 random
 ssl
-pixiv crawler
