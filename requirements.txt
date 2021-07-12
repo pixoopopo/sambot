@@ -5,6 +5,5 @@ youtube_dl
 urllib3
 bs4
 datetime
-pickle
 random
 ssl
