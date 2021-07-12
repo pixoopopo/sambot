@@ -1,0 +1,13 @@
+discord.py
+requests
+asyncio
+youtube_dl
+urllib
+Request
+bs4
+datetime
+time
+pickle
+random
+ssl
+pixiv crawler
