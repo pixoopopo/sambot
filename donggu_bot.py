@@ -23,7 +23,7 @@ import validators
 import ssl
 from urllib.parse import quote
 
-#import pixiv_crawler as pc
+import pixiv_crawler as pc
 
 ssl._create_default_https_context = ssl._create_unverified_context
 #from selenium import webdriver
@@ -321,6 +321,9 @@ async def 운지(ctx):
     await ctx.send('https://media.discordapp.net/attachments/389802029456949250/734793035811913798/image0.gif')
 
 
+for filename in os.listdir("Cogs"): #2
+    if filename.endswith(".py"): #3
+        app.load_extension(f"Cogs.{filename[:-3]}") #4
 
 
 @app.command()
@@ -337,11 +340,11 @@ async def 전자계집(ctx):
     embed.set_author(name="전자계집",icon_url='http://www.businesspost.co.kr/news/photo/201804/20180417205023_15744.jpg')
     embed.set_thumbnail(url='https://img.hankyung.com/photo/202106/01.26562695.1.jpg')
     embed.set_image(url=sampics)
-    embed.set_footer(text="Ver. 5.23a   Devloped by Pix")
+    embed.set_footer(text="Ver. 0.0a   Devloped by Pix")
     await ctx.send(embed=embed)
-
+''''''
 #music player
-@app.command()
+'''@app.command()
 async def play(ctx, url):
     channel = ctx.author.voice.channel
     if app.voice_clients == []:
@@ -357,9 +360,15 @@ async def play(ctx, url):
         print(url)
     await ctx.send(f"재생중: {info['title']}")
     voice = app.voice_clients[0]
-    voice.play(discord.FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
-  
+    voice.play(discord.FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))'''
+''''''
     
+@app.command(name="로드")
+async def load_commands(ctx, extension):
+    app.load_extension(f"Cogs.{extension}")
+    await ctx.send(f":white_check_mark: {extension}을(를) 로드했습니다!")
+
+
 
 """@app.command(pass_context=True)
     async def play2(ctx, url):
