@@ -97,7 +97,7 @@ class music_cog(commands.Cog):
                     await self.play_music()
 
             else:
-                await ctx.send(f"추가된 노래: {song['title']}")
+                await ctx.send(f"노래 추가 됨: {song['title']}")
                 self.music_queue.append([song, voice_channel])
                 
                 if self.is_playing == False:
