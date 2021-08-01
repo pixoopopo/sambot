@@ -22,7 +22,7 @@ import base64
 import validators
 import ssl
 from urllib.parse import quote
-
+import psycopg2
 import pixiv_crawler as pc
 
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -36,7 +36,9 @@ status=['운지', '공중제비', '직무유기', '홍어 때리맥이기']
 from googleapiclient.discovery import build
 
 
+DATABASE_URL = os.environ['d33us2htjq962o']
 
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 
 app = commands.Bot(command_prefix = "!")
