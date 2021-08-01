@@ -12,4 +12,3 @@ lxml
 PyNaCl
 pixiv-crawler
 psycopg2-binary
-libpq-dev
