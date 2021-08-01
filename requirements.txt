@@ -11,4 +11,5 @@ google-api-python-client
 lxml
 PyNaCl
 pixiv-crawler
+psycopg2-binary
 libpq-dev
