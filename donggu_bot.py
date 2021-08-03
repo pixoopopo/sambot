@@ -36,9 +36,9 @@ status=['운지', '공중제비', '직무유기', '홍어 때리맥이기']
 from googleapiclient.discovery import build
 
 
-DATABASE_URL = os.environ['postgres://zzysgozigaqerq:55d69d43eba241b68f7bf1f03ef7b28c689e278d4bfb688e3283ce5b69f8944b@ec2-54-155-254-112.eu-west-1.compute.amazonaws.com:5432/d33us2htjq962o']
+#DATABASE_URL = os.environ['postgres://zzysgozigaqerq:55d69d43eba241b68f7bf1f03ef7b28c689e278d4bfb688e3283ce5b69f8944b@ec2-54-155-254-112.eu-west-1.compute.amazonaws.com:5432/d33us2htjq962o']
 
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 
 app = commands.Bot(command_prefix = "!")
