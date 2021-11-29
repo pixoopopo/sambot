@@ -415,5 +415,5 @@ async def 입장(ctx):
 
 
 
-app.run('ODU2NDc5ODU0NDY2Njk1MjA4.YNBpBQ.5r7zTTHn5OFB69WV7EEnFirf4QM')
+app.run('')
 
