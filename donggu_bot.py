@@ -68,15 +68,7 @@ async def change_status():
     await app.change_presence(activity=discord.Game(choice(status)))
 
 
-'''pc.set_value('username','user_fafy5284')
-pc.set_value('password','a6LXkBJVZchyXS+')
-# pc.set_value('socks','127.0.0.1:8388')
-pc.set_value("local_save_root","./%y.%m.%d")
-pc.set_value("cookies_file","./cookies.txt") # cookies in json format
-# pc.set_value("garage_file","./garage.txt")
-pc.set_value("chrome","C:\\Users\\jingu\\AppData\\Local\\Programs\\Python\Python39\\chromedriver.exe") # for simulating log in process. the path will be (bala...)/phantomjs.exe on Windows
-pc.login()
-pc.dl_rank_daily(1)'''
+
 
 @app.command()
 async def 동구(ctx):
